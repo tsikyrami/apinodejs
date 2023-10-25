@@ -10,7 +10,7 @@ app.use(api_prefix,api_router);
 app.listen (port, () => {
     console.log("The server listens on the port ".concat(port));
 });
-/*
+
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader("Access-Control-Allow-Credentials", "true");
@@ -19,7 +19,6 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     next();
 });
-*/
 
 app.use((req, res) => {
     res.json({ message: "UPDATE !" }); 
