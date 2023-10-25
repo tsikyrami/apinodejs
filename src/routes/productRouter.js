@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
     res.status(200).json(response);
 });
 
+
 router.get('/product',productController.getProduct);
 router.post('/productid', productController.getProductById);
 
